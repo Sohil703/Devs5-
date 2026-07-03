@@ -41,55 +41,88 @@ const TeamSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.1, duration: 0.5 }}
-                className="group relative rounded-2xl bg-card border border-border p-6 hover:border-primary/30 transition-all duration-300 hover:glow-primary flex flex-col justify-between"
+                className="group w-full h-[330px] relative"
+                style={{ perspective: "1200px" }}
               >
-                <div>
-                  {/* Avatar & Availability */}
-                  <div className="relative w-20 h-20 rounded-2xl bg-primary/5 flex items-center justify-center text-4xl mb-5 mx-auto group-hover:scale-105 transition-transform duration-300">
-                    {member.avatar}
-                    <span className={`absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full border-2 border-background ${
-                      member.availability === "Available" ? "bg-emerald-500" :
-                      member.availability === "Almost Booked" ? "bg-amber-500" : "bg-red-500"
-                    }`} title={member.availability} />
-                  </div>
+                <div 
+                  className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer"
+                  style={{ transformStyle: "preserve-3d" }}
+                >
+                  {/* Front Side */}
+                  <div 
+                    className="absolute inset-0 w-full h-full rounded-3xl bg-glass border border-border/60 p-6 flex flex-col items-center justify-center text-center shadow-lg group-hover:shadow-primary/5 transition-all duration-300 overflow-hidden"
+                    style={{ backfaceVisibility: "hidden" }}
+                  >
+                    {/* Glowing effect inside the card */}
+                    <div className="absolute -top-24 -left-24 w-48 h-48 rounded-full bg-primary/5 blur-3xl pointer-events-none group-hover:bg-primary/10 transition-colors duration-500" />
+                    
+                    {/* Avatar & Availability */}
+                    <div className="relative w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border/80 flex items-center justify-center text-4xl mb-6 shadow-inner ring-4 ring-primary/5 ring-offset-2 ring-offset-background transition-transform duration-500 group-hover:scale-105">
+                      {member.avatar}
+                      <span className={`absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full border-2 border-background ${
+                        member.availability === "Available" ? "bg-emerald-500" :
+                        member.availability === "Almost Booked" ? "bg-amber-500" : "bg-red-500"
+                      }`} title={member.availability} />
+                    </div>
 
-                  <div className="text-center mb-4">
-                    <h3 className="font-display font-bold text-base text-foreground leading-tight">
+                    <h3 className="font-display font-bold text-lg text-foreground leading-tight tracking-tight mb-2">
                       {member.name}
                     </h3>
-                    <p className="text-xs text-primary font-medium mt-1">
+                    
+                    {/* Role Label */}
+                    <p className="text-xs text-primary font-semibold tracking-wider uppercase mb-3">
                       {member.role}
                     </p>
-                    <p className="text-[10px] text-muted-foreground mt-0.5 flex items-center justify-center gap-0.5">
-                      <MapPin size={10} />
+
+                    <p className="text-[10px] text-muted-foreground/80 flex items-center justify-center gap-1 font-medium mt-1">
+                      <MapPin size={11} className="text-primary/70" />
                       {member.location}
                     </p>
-                  </div>
 
-                  <div className="w-full h-px bg-border/50 my-3" />
-
-                  {/* Primary Skills */}
-                  <div className="space-y-2 mb-6">
-                    <p className="text-[10px] uppercase font-bold tracking-wider text-muted-foreground text-left">Top Skills</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {member.skills.slice(0, 3).map((skill) => (
-                        <span
-                          key={skill.name}
-                          className="text-[10px] px-2 py-0.5 rounded-md bg-secondary text-secondary-foreground font-medium"
-                        >
-                          {skill.name}
-                        </span>
-                      ))}
+                    {/* Hint at the bottom */}
+                    <div className="absolute bottom-4 text-[9px] text-muted-foreground/40 font-semibold tracking-wider uppercase group-hover:opacity-0 transition-opacity duration-300">
+                      Hover to view skills
                     </div>
                   </div>
-                </div>
 
-                <button
-                  onClick={() => handleOpenProfile(member)}
-                  className="w-full py-2.5 rounded-xl border border-primary/20 bg-primary/5 text-primary text-xs font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-200"
-                >
-                  View Profile
-                </button>
+                  {/* Back Side */}
+                  <div 
+                    className="absolute inset-0 w-full h-full rounded-3xl bg-glass border border-border/60 p-6 flex flex-col justify-between shadow-lg group-hover:shadow-primary/5 transition-all duration-300 overflow-hidden [transform:rotateY(180deg)]"
+                    style={{ 
+                      backfaceVisibility: "hidden"
+                    }}
+                  >
+                    <div className="space-y-5">
+                      <h4 className="font-display text-sm font-bold text-foreground border-b border-border/40 pb-2.5 flex items-center gap-2 tracking-wide">
+                        <span className="w-2.5 h-2.5 rounded-full bg-gradient-primary" />
+                        Top Skills
+                      </h4>
+                      <div className="space-y-3.5 text-left">
+                        {member.skills.slice(0, 3).map((skill) => (
+                          <div key={skill.name} className="space-y-1">
+                            <div className="flex justify-between text-[10px]">
+                              <span className="font-semibold text-muted-foreground/90">{skill.name}</span>
+                              <span className="text-primary font-bold">{skill.level}%</span>
+                            </div>
+                            <div className="h-1.5 rounded-full bg-secondary/80 overflow-hidden">
+                              <div
+                                className="h-full rounded-full bg-gradient-primary"
+                                style={{ width: `${skill.level}%` }}
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={() => handleOpenProfile(member)}
+                      className="w-full py-3 rounded-xl bg-gradient-primary text-primary-foreground text-xs font-semibold hover:opacity-95 shadow-md shadow-primary/10 hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
+                    >
+                      View Full Profile
+                    </button>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>

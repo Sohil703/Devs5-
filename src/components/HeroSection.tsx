@@ -49,14 +49,14 @@ const HeroSection = () => {
           </motion.div>
 
           {/* Large Title */}
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none">
-            We Build Modern <br />
-            <span className="text-gradient">Web Applications</span>
+          <h1 className="font-display text-[7.5vw] xs:text-[7vw] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight leading-[1.15] max-w-5xl mx-auto">
+            <span className="block whitespace-nowrap">We Build Technology</span>
+            <span className="text-gradient block whitespace-nowrap">That Works for you</span>
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground/90 font-light max-w-2xl mx-auto leading-relaxed">
-            A collaborative powerhouse of 5 specialized React & Full-Stack developers. We construct custom ERPs, CRM systems, high-performance dashboards, and responsive web platforms.
+           We provide best technology and and IT services around the world with more than 6+ years of combined experience.
           </p>
 
           {/* Core Metrics Quick-Grid */}
@@ -73,7 +73,7 @@ const HeroSection = () => {
             <div className="w-px h-8 bg-border hidden sm:block" />
             <div className="text-center">
               <p className="text-xs text-muted-foreground uppercase font-semibold tracking-widest">Combined Exp.</p>
-              <p className="text-xl font-bold text-foreground">18+ Years</p>
+              <p className="text-xl font-bold text-foreground">6+ Years</p>
             </div>
           </div>
 
