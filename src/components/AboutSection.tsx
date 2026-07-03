@@ -37,10 +37,10 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center mb-12">
             <div className="md:col-span-7 space-y-4 text-muted-foreground leading-relaxed text-base md:text-lg">
               <p>
-                We are a collaborative team of passionate <strong className="text-foreground font-semibold">React & Full-Stack Developers</strong>. Rather than working as isolated freelancers, we combine our strengths in design, logic, integration, databases, and testing to build comprehensive web solutions that perform under heavy enterprise workloads.
+                We are a passionate team of designers and developers specializing in graphic design, frontend development, backend development, and Unity game development. With over <strong className="text-foreground font-semibold">6+ years of combined industry experience</strong>, we've successfully delivered impactful digital solutions that help businesses grow.
               </p>
               <p>
-                Whether you need a lightweight, conversions-focused landing page, an interactive admin dashboard, or complex enterprise software (such as custom ERP systems, CRMs, school management software, or specialized business tools), we plan, write, and verify every single line of code to ensure production grade stability.
+                Our expertise spans websites, web applications, custom software, game development, and digital media. We take pride in building long term relationships with our clients, many of whom return to us for future projects because of our commitment to quality, reliability, and results.
               </p>
             </div>
 
@@ -50,7 +50,7 @@ const AboutSection = () => {
                 <h3 className="font-display font-bold text-lg text-foreground">Our Philosophy</h3>
               </div>
               <p className="text-sm text-muted-foreground/90 leading-relaxed">
-                "We don't just build components; we design clean, scalable ecosystems. Every module we ship is written in clean TypeScript, rigorously tested, and fully optimized for user engagement."
+                "We turn ideas into impactful digital experiences through thoughtful design, quality development, and honest collaboration. Every project we build is driven by purpose, precision, and a commitment to delivering lasting value."
               </p>
             </div>
           </div>
