@@ -369,7 +369,7 @@ export const projects: Project[] = [
     title: "Krishna Kala Wellness",
     description: "A scalable e-commerce solution developed for wellness products, designed to handle growing customer traffic while maintaining a responsive shopping experience and real-time inventory updates.",
     category: "ecommerce",
-    tech: ["Shopify", "Liquid", "HTML5", "CSS3", "JavaScript"],
+    tech: ["Shopify"],
     features: [
       "Responsive online shopping experience",
       "Real-time product stock updates",
