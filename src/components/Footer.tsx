@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo & Info */}
           <div className="space-y-4 col-span-1 md:col-span-2">
-            <a href="#" className="font-display text-xl font-bold text-gradient flex items-center gap-2">
-              <span className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center text-white text-sm font-display tracking-wider">S5</span>
-              <span>Devs</span>
+            <a href="#" className="flex items-center gap-2 group">
+              <img src="/logo.png" alt="CH-Solution" className="h-8 w-auto transition-transform duration-300 group-hover:scale-105" />
+              <span className="font-display text-xl font-bold text-gradient">CH-Solution</span>
             </a>
             <p className="text-xs text-muted-foreground/80 leading-relaxed max-w-sm">
               We are a collaborative squad of 5 passionate React & Full-Stack Developers building modern, secure, and production-grade dashboards, CRM/ERP systems, and custom web applications.
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="w-full h-px bg-border/40 my-6" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-muted-foreground">
-          <p>© {new Date().getFullYear()} S5 Devs Team. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CH-Solution Team. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:underline">Privacy Policy</a>
             <a href="#" className="hover:underline">Terms of Service</a>

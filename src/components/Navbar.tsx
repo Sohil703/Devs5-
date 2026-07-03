@@ -31,9 +31,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
-        <a href="#" className="font-display text-xl font-bold text-gradient flex items-center gap-2">
-          <span className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center text-white text-sm font-display tracking-wider">S5</span>
-          <span>Devs</span>
+        <a href="#" className="flex items-center gap-2 group">
+          <img src="/logo.png" alt="CH-Solution" className="h-8 w-auto transition-transform duration-300 group-hover:scale-105" />
+          <span className="font-display text-xl font-bold text-gradient">CH-Solution</span>
         </a>
 
         {/* Desktop */}
