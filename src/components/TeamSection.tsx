@@ -56,10 +56,14 @@ const TeamSection = () => {
                     {/* Glowing effect inside the card */}
                     <div className="absolute -top-24 -left-24 w-48 h-48 rounded-full bg-primary/5 blur-3xl pointer-events-none group-hover:bg-primary/10 transition-colors duration-500" />
                     
-                    {/* Avatar & Availability */}
-                    <div className="relative w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border/80 flex items-center justify-center text-4xl mb-6 shadow-inner ring-4 ring-primary/5 ring-offset-2 ring-offset-background transition-transform duration-500 group-hover:scale-105">
-                      {member.avatar}
-                      <span className={`absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full border-2 border-background ${
+                    {/* Member photo with availability indicator dot */}
+                    <div className="relative w-20 h-20 rounded-full mb-5 ring-4 ring-primary/5 ring-offset-2 ring-offset-background transition-transform duration-500 group-hover:scale-105 overflow-hidden flex-shrink-0">
+                      <img 
+                        src={member.photo} 
+                        alt={member.name} 
+                        className="w-full h-full object-cover"
+                      />
+                      <span className={`absolute bottom-0.5 right-0.5 w-3.5 h-3.5 rounded-full border-2 border-background ${
                         member.availability === "Available" ? "bg-emerald-500" :
                         member.availability === "Almost Booked" ? "bg-amber-500" : "bg-red-500"
                       }`} title={member.availability} />

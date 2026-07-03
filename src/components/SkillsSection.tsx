@@ -1,9 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Monitor, Server, Wrench } from "lucide-react";
 
 const skillGroups = [
   {
     title: "Frontend Skills",
+    icon: Monitor,
     skills: [
       { name: "React / Next.js", level: 93 },
       { name: "TypeScript", level: 89 },
@@ -16,6 +18,7 @@ const skillGroups = [
   },
   {
     title: "Backend Skills",
+    icon: Server,
     skills: [
       { name: "PHP / Laravel", level: 88 },
       { name: "MySQL / PostgreSQL", level: 85 },
@@ -24,6 +27,7 @@ const skillGroups = [
   },
   {
     title: "Tools & Utilities",
+    icon: Wrench,
     skills: [
       { name: "Git & Version Control", level: 90 },
       { name: "GitHub / GitLab", level: 89 },
@@ -58,37 +62,40 @@ const SkillsSection = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {skillGroups.map((group, gi) => (
-              <div key={group.title} className="bg-glass p-6 rounded-2xl border border-border/80 shadow-md">
-                <h3 className="font-display text-lg font-bold text-foreground mb-6 flex items-center gap-2 border-b border-border/50 pb-3">
-                  <span className="w-2.5 h-2.5 rounded-full bg-primary" />
-                  {group.title}
-                </h3>
-                <div className="space-y-5">
-                  {group.skills.map((skill, si) => (
-                    <motion.div
-                      key={skill.name}
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={inView ? { opacity: 1, x: 0 } : {}}
-                      transition={{ delay: 0.15 + (gi * 3 + si) * 0.05, duration: 0.4 }}
-                    >
-                      <div className="flex justify-between mb-1.5 text-xs">
-                        <span className="font-medium text-foreground">{skill.name}</span>
-                        <span className="text-muted-foreground font-semibold">{skill.level}%</span>
-                      </div>
-                      <div className="h-1.5 rounded-full bg-secondary overflow-hidden">
-                        <motion.div
-                          className="h-full rounded-full bg-gradient-primary"
-                          initial={{ width: 0 }}
-                          animate={inView ? { width: `${skill.level}%` } : {}}
-                          transition={{ delay: 0.3 + (gi * 3 + si) * 0.05, duration: 0.8, ease: "easeOut" }}
-                        />
-                      </div>
-                    </motion.div>
-                  ))}
+            {skillGroups.map((group, gi) => {
+              const IconComponent = group.icon;
+              return (
+                <div key={group.title} className="bg-glass p-6 rounded-2xl border border-border/80 shadow-md">
+                  <h3 className="font-display text-lg font-bold text-foreground mb-6 flex items-center gap-2.5 border-b border-border/50 pb-3">
+                    <IconComponent size={18} className="text-primary" />
+                    {group.title}
+                  </h3>
+                  <div className="space-y-5">
+                    {group.skills.map((skill, si) => (
+                      <motion.div
+                        key={skill.name}
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={inView ? { opacity: 1, x: 0 } : {}}
+                        transition={{ delay: 0.15 + (gi * 3 + si) * 0.05, duration: 0.4 }}
+                      >
+                        <div className="flex justify-between mb-1.5 text-xs">
+                          <span className="font-medium text-foreground">{skill.name}</span>
+                          <span className="text-muted-foreground font-semibold">{skill.level}%</span>
+                        </div>
+                        <div className="h-1.5 rounded-full bg-secondary overflow-hidden">
+                          <motion.div
+                            className="h-full rounded-full bg-gradient-primary"
+                            initial={{ width: 0 }}
+                            animate={inView ? { width: `${skill.level}%` } : {}}
+                            transition={{ delay: 0.3 + (gi * 3 + si) * 0.05, duration: 0.8, ease: "easeOut" }}
+                          />
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </motion.div>
       </div>

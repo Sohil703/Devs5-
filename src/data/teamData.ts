@@ -29,6 +29,7 @@ export interface TeamMember {
   availability: "Available" | "Almost Booked" | "In Project";
   location: string;
   avatar: string;
+  photo: string;
   timeline: TimelineItem[];
   education: EducationItem[];
 }
@@ -89,6 +90,7 @@ export const teamMembers: TeamMember[] = [
     availability: "Available",
     location: "Mumbai, India",
     avatar: "👨‍💻",
+    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150",
     skills: [
       { name: "React.js / Next.js", level: 95 },
       { name: "TypeScript", level: 92 },
@@ -135,6 +137,7 @@ export const teamMembers: TeamMember[] = [
     availability: "Available",
     location: "Bengaluru, India",
     avatar: "🚀",
+    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150",
     skills: [
       { name: "React.js", level: 92 },
       { name: "TypeScript", level: 90 },
@@ -181,6 +184,7 @@ export const teamMembers: TeamMember[] = [
     availability: "Almost Booked",
     location: "Pune, India",
     avatar: "🎨",
+    photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=150&h=150",
     skills: [
       { name: "React.js / Next.js", level: 90 },
       { name: "Tailwind CSS & CSS Grid", level: 96 },
@@ -227,6 +231,7 @@ export const teamMembers: TeamMember[] = [
     availability: "Available",
     location: "Ahmedabad, India",
     avatar: "💻",
+    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
     skills: [
       { name: "React.js", level: 88 },
       { name: "PHP / Laravel", level: 92 },
@@ -273,6 +278,7 @@ export const teamMembers: TeamMember[] = [
     availability: "Available",
     location: "Delhi, India",
     avatar: "🔍",
+    photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150",
     skills: [
       { name: "React.js & TypeScript", level: 87 },
       { name: "Vitest / Jest Unit Testing", level: 95 },
