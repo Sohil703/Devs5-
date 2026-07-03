@@ -314,88 +314,91 @@ export const teamMembers: TeamMember[] = [
 export const projects: Project[] = [
   {
     id: "proj1",
-    title: "Enterprise ERP Dashboard",
-    description: "A comprehensive ERP dashboard tailored for manufacturing clients, featuring inventory management, live supplier portals, financial analytics, and payroll systems.",
-    category: "erp-crm",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Zustand"],
+    title: "Taxiwale.in — Taxi Service Platform",
+    description: "A modern taxi booking platform designed to provide a fast and reliable ride-booking experience with a clean interface, responsive layouts, and seamless navigation across devices.",
+    category: "custom",
+    tech: ["React", "JavaScript", "Bootstrap", "CSS"],
     features: [
-      "Real-time analytics graphs and financial projections",
-      "Dynamic interactive inventory system with low-stock alerts",
-      "Supplier order placements and automated invoice generator",
-      "Configurable theme customizer (Dark/Light/Neutral)"
+      "Fast and lightweight user experience",
+      "Responsive design for mobile and desktop",
+      "Interactive and intuitive booking interface",
+      "Service information and fare details",
+      "Easy navigation with optimized performance"
     ],
-    githubUrl: "https://github.com/",
-    liveUrl: "https://github.com/",
+    githubUrl: "#",
+    liveUrl: "https://taxiwale.in/",
     color: "from-blue-500/20 to-indigo-500/5",
-    screenshot: "📊"
+    screenshot: "/taxiwale.png"
   },
   {
     id: "proj2",
     title: "School Management System",
     description: "A full-scale portal for schools to manage student registration, grading sheets, fee collections, staff schedules, and direct parent-teacher chat logs.",
     category: "custom",
-    tech: ["React", "TypeScript", "Chakra UI", "PHP", "MySQL"],
+    tech: ["React", "TypeScript", "Tailwind CSS", "PHP", "MySQL"],
     features: [
       "Automated attendance logs using custom calendars",
       "Student report card generator with custom grading logic",
       "Student registration and secure online fee collection",
       "Direct chat dashboard with JWT authentication"
     ],
-    githubUrl: "https://github.com/",
-    liveUrl: "https://github.com/",
+    githubUrl: "#",
+    liveUrl: "https://emaad-school.pages.dev/",
     color: "from-emerald-500/20 to-teal-500/5",
-    screenshot: "🏫"
+    screenshot: "/emaad-school.png"
   },
   {
     id: "proj3",
-    title: "B2C E-Commerce Application",
-    description: "A responsive, fast, and SEO-friendly e-commerce application equipped with a customizable product filter, cart system, and Stripe gateway.",
+    title: "Wafa Naqab Shop",
+    description: "A premium online shopping platform for Wafa Naqab Shop, showcasing and retail selling high-quality Abayas, Burqas, and Hijabs with a responsive collection browser and administrative dashboard panel.",
     category: "ecommerce",
-    tech: ["React", "Next.js", "Tailwind CSS", "Redux Toolkit", "Stripe API"],
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP", "MySQL"],
     features: [
-      "Optimized static rendering for speedy load times",
-      "Advanced filtering by size, price, category, and review count",
-      "Full offline shopping cart state persistency",
-      "Stripe payment integration with webhooks"
+      "Interactive catalog browsing for Abayas, Burqas, and Hijabs",
+      "Secure Admin Panel for inventory management and product uploads",
+      "Responsive UI design optimized for both mobile and desktop viewports",
+      "Inquiry routing and contact portals for customer orders"
     ],
-    githubUrl: "https://github.com/",
-    liveUrl: "https://github.com/",
+    githubUrl: "#",
+    liveUrl: "https://wafanaqabshop.com",
     color: "from-amber-500/20 to-orange-500/5",
-    screenshot: "🛍️"
+    screenshot: "/wafa-naqab.png"
   },
   {
     id: "proj4",
-    title: "Custom CRM & Lead Tracker",
-    description: "A sales pipeline tracker helping startups capture leads, assign clients to reps, log client calls, and track monthly sales targets.",
-    category: "erp-crm",
-    tech: ["React", "TypeScript", "Tailwind CSS", "REST API", "Framer Motion"],
+    title: "Krishna Kala Wellness",
+    description: "A scalable e-commerce solution developed for wellness products, designed to handle growing customer traffic while maintaining a responsive shopping experience and real-time inventory updates.",
+    category: "ecommerce",
+    tech: ["Shopify", "Liquid", "HTML5", "CSS3", "JavaScript"],
     features: [
-      "Kanban board with smooth drag-and-drop animations",
-      "Lead generation forms with automated email notifications",
-      "Call log archives with transcription viewer",
-      "Sales targets vs. achievements gauge charts"
+      "Responsive online shopping experience",
+      "Real-time product stock updates",
+      "Optimized performance for high user traffic",
+      "Product categorization and search",
+      "Secure and user-friendly checkout process"
     ],
-    githubUrl: "https://github.com/",
-    liveUrl: "https://github.com/",
+    githubUrl: "#",
+    liveUrl: "https://krishnakalawellness.com/",
     color: "from-purple-500/20 to-pink-500/5",
-    screenshot: "🎯"
+    screenshot: "/krishna-kala.png"
   },
   {
     id: "proj5",
-    title: "Project Management Hub",
-    description: "A collaborative project management portal designed for digital agencies to track project sprints, delegate sub-tasks, and log billable timesheets.",
-    category: "dashboards",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Zustand", "Playwright"],
+    title: "Svatantra Homes",
+    description: "A mobile application developed to simplify access to microfinance services with a responsive interface, smooth navigation, and efficient data management for users.",
+    category: "custom",
+    tech: ["Flutter", "Dart", "SQLite", "REST API"],
     features: [
-      "Multi-user task boards with real-time updates",
-      "Interactive timeline and Gantt charts",
-      "Detailed task search filters and tags",
-      "Integrated timer for tracking billable hours"
+      "Fast and responsive mobile experience",
+      "User-friendly application workflow",
+      "Secure customer data management",
+      "Optimized performance for everyday usage",
+      "Clean and intuitive Flutter-based interface"
     ],
-    githubUrl: "https://github.com/",
-    liveUrl: "https://github.com/",
+    githubUrl: "#",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.svatantrahomesloan",
     color: "from-rose-500/20 to-red-500/5",
-    screenshot: "📅"
+    screenshot: "/svatantra.png"
   }
 ];
 

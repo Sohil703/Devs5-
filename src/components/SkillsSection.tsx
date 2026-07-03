@@ -4,38 +4,38 @@ import { Monitor, Server, Wrench } from "lucide-react";
 
 const skillGroups = [
   {
-    title: "Frontend Skills",
+    title: "Frontend & Mobile Dev",
     icon: Monitor,
     skills: [
-      { name: "React / Next.js", level: 93 },
-      { name: "TypeScript", level: 89 },
-      { name: "JavaScript (ES6+)", level: 92 },
-      { name: "HTML5 / CSS3", level: 94 },
-      { name: "Tailwind CSS", level: 92 },
-      { name: "Bootstrap", level: 85 },
-      { name: "Chakra UI / Radix / Shadcn", level: 90 },
-    ],
+      { name: "React & Next.js", level: 95 },
+      { name: "JavaScript & TypeScript", level: 92 },
+      { name: "HTML5 / CSS3 / Tailwind CSS", level: 94 },
+      { name: "Bootstrap & Material UI", level: 91 },
+      { name: "Flutter Mobile Apps", level: 80 }
+    ]
   },
   {
-    title: "Backend Skills",
+    title: "Backend, Game Dev & DevOps",
     icon: Server,
     skills: [
-      { name: "PHP / Laravel", level: 88 },
-      { name: "MySQL / PostgreSQL", level: 85 },
-      { name: "REST API Development", level: 91 },
-    ],
+      { name: "Python & Django/FastAPI", level: 95 },
+      { name: "Unity Game Engine & C#", level: 93 },
+      { name: "Node.js & NestJS Backend", level: 91 },
+      { name: "Databases (MongoDB/SQL/Redis)", level: 91 },
+      { name: "DevOps (Docker/AWS/Nginx)", level: 88 }
+    ]
   },
   {
-    title: "Tools & Utilities",
+    title: "Design & Desktop Utilities",
     icon: Wrench,
     skills: [
+      { name: "Adobe Photoshop & Illustrator", level: 94 },
+      { name: "Canva & Creative Layouts", level: 90 },
       { name: "Git & Version Control", level: 90 },
-      { name: "GitHub / GitLab", level: 89 },
-      { name: "VS Code Editor", level: 95 },
-      { name: "Figma UI/UX Design", level: 86 },
-      { name: "Postman API Testing", level: 88 },
-    ],
-  },
+      { name: "CorelDRAW & Print Media", level: 88 },
+      { name: "Tauri Desktop & Rust", level: 80 }
+    ]
+  }
 ];
 
 const SkillsSection = () => {

@@ -1,25 +1,11 @@
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { ExternalLink, Github, Layers, Play } from "lucide-react";
 import { projects } from "@/data/teamData";
-
-const categories = [
-  { value: "all", label: "All Projects" },
-  { value: "erp-crm", label: "ERP & CRM" },
-  { value: "dashboards", label: "Dashboards" },
-  { value: "ecommerce", label: "E-Commerce" },
-  { value: "custom", label: "Custom Apps" },
-];
 
 const ProjectsSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const [filter, setFilter] = useState("all");
-
-  const filteredProjects = projects.filter((p) => {
-    if (filter === "all") return true;
-    return p.category === filter;
-  });
 
   return (
     <section id="projects" className="py-24 md:py-32">
@@ -40,25 +26,8 @@ const ProjectsSection = () => {
             </p>
           </div>
 
-          {/* Category Filter Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-12 max-w-2xl mx-auto">
-            {categories.map((cat) => (
-              <button
-                key={cat.value}
-                onClick={() => setFilter(cat.value)}
-                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 ${
-                  filter === cat.value
-                    ? "bg-primary text-primary-foreground shadow-md shadow-primary/10"
-                    : "bg-secondary text-secondary-foreground hover:bg-muted border border-border"
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {filteredProjects.map((project, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
+            {projects.map((project, i) => (
               <motion.div
                 key={project.id}
                 layout
@@ -68,8 +37,16 @@ const ProjectsSection = () => {
                 className="group relative rounded-2xl bg-card border border-border overflow-hidden hover:border-primary/30 transition-all duration-300 hover:glow-primary flex flex-col justify-between"
               >
                 {/* Visual Header */}
-                <div className={`h-40 bg-gradient-to-br ${project.color} flex items-center justify-center text-6xl select-none group-hover:scale-[1.02] transition-transform duration-300 relative`}>
-                  <span className="relative z-10 filter drop-shadow-md">{project.screenshot}</span>
+                <div className={`h-40 bg-gradient-to-br ${project.color} flex items-center justify-center select-none group-hover:scale-[1.02] transition-transform duration-300 relative overflow-hidden`}>
+                  {project.screenshot.startsWith("/") ? (
+                    <img 
+                      src={project.screenshot} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <span className="relative z-10 text-6xl filter drop-shadow-md">{project.screenshot}</span>
+                  )}
                   <div className="absolute top-4 right-4 text-[10px] px-2.5 py-0.5 rounded-full bg-background/60 backdrop-blur-md font-semibold text-foreground border border-border/50 uppercase tracking-wider">
                     {project.category.replace("-", " ")}
                   </div>
@@ -118,15 +95,6 @@ const ProjectsSection = () => {
                     >
                       <ExternalLink size={12} />
                       Live Demo
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors ml-auto"
-                    >
-                      <Github size={12} />
-                      Code Repository
                     </a>
                   </div>
                 </div>
