@@ -138,49 +138,49 @@ export const teamMembers: TeamMember[] = [
     ]
   },
   {
-    id: "aarav",
-    name: "Aarav Mehta",
-    role: "Senior Frontend Engineer",
-    experience: "4+ Years",
-    bio: "Senior Frontend Engineer with a sharp focus on user experience, state management optimization, and robust API integrations. aarav bridges the gap between clean UI design and reliable data-fetching layers.",
-    email: "aarav@antigravity-devs.com",
-    phone: "+91 98765 43211",
+    id: "sohil",
+    name: "Sohil Sumra",
+    role: "React Developer",
+    experience: "3+ Years",
+    bio: "Passionate React Developer specializing in building modern user-facing web applications, responsive user interfaces, and robust frontend architectures. Expert in TypeScript, Tailwind CSS, and Tauri desktop application development.",
+    email: "sohilsumra703@gmail.com",
+    phone: "+91 97271 61462",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/",
     portfolio: "#",
     resumeUrl: "#",
     availability: "Available",
-    location: "Bengaluru, India",
+    location: "Himmatnagar, Gujarat, India",
     avatar: "🚀",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150",
+    photo: "/sohil-sumra.jpg",
     skills: [
-      { name: "React.js", level: 92 },
-      { name: "TypeScript", level: 90 },
-      { name: "REST APIs & GraphQL", level: 95 },
-      { name: "Tailwind CSS & Material UI", level: 89 },
-      { name: "Zustand & React Query", level: 91 }
+      { name: "React & NestJS", level: 93 },
+      { name: "JavaScript & TypeScript", level: 92 },
+      { name: "Tailwind CSS & Material UI", level: 90 },
+      { name: "Tauri & Desktop Apps", level: 82 },
+      { name: "Rust & Backend Logic", level: 75 }
     ],
     timeline: [
       {
-        company: "Cognizant",
-        role: "Frontend Engineer",
-        period: "2022 — Present",
-        description: "Implemented complex workflow automation web modules and integrated secure third-party payment & authentication gateways.",
+        company: "Emaad Infotech",
+        role: "React Developer",
+        period: "2023 — Present",
+        description: "Develop new user-facing features using React.js and related front-end technologies. Translate UI/UX designs into responsive web pages. Integrate APIs and optimize application for scalability and accessibility.",
         current: true
       },
       {
-        company: "Infocus Web Solutions",
-        role: "React UI Developer",
-        period: "2020 — 2022",
-        description: "Built responsive business landing pages, product catalogs, and optimized layouts for cross-device compatibility.",
+        company: "Xipra Technology",
+        role: "Frontend Developer",
+        period: "2022 — 2023",
+        description: "Developed responsive, high-performance UI components using HTML5, CSS3, and JavaScript. Built dynamic features and integrated data from APIs. Optimized layout performance.",
         current: false
       }
     ],
     education: [
       {
-        degree: "Bachelor of Computer Applications (BCA)",
-        school: "Bangalore University",
-        year: "2017 — 2020"
+        degree: "Bachelor of Commerce (B.Com)",
+        school: "HL College of Commerce (Gujarat University)",
+        year: "2019 — 2022"
       }
     ]
   },
