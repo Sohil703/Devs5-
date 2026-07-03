@@ -10,6 +10,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import StatsSection from "@/components/StatsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ColorCustomizer from "@/components/ColorCustomizer";
 
 const Index = () => (
   <div className="min-h-screen bg-background antialiased selection:bg-primary/20 selection:text-primary">
@@ -25,6 +26,7 @@ const Index = () => (
     <StatsSection />
     <ContactSection />
     <Footer />
+    <ColorCustomizer />
   </div>
 );
 
