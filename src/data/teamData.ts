@@ -277,51 +277,37 @@ export const teamMembers: TeamMember[] = [
     education: []
   },
   {
-    id: "riya",
-    name: "Riya Sen",
-    role: "Frontend QA & React Engineer",
-    experience: "3+ Years",
-    bio: "Quality-focused React Developer with deep expertise in unit testing, end-to-end integration testing, and accessibility (a11y) standards. Riya ensures all web applications are bug-free, performant, and reliable.",
-    email: "riya@antigravity-devs.com",
-    phone: "+91 98765 43214",
+    id: "arman",
+    name: "Arman Sumra",
+    role: "Graphic Designer",
+    experience: "4+ Years",
+    bio: "I'm a Graphic Designer with 3+ years of experience creating creative and impactful designs for both digital and print media. I specialize in social media creatives, branding, logo design, packaging, and marketing materials. I focus on delivering high-quality visuals that help businesses build a strong brand identity and connect with their audience. I enjoy turning ideas into eye-catching designs while continuously learning new design trends and techniques.",
+    email: "armaansumra786@gmail.com",
+    phone: "9428567512",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/",
     portfolio: "#",
     resumeUrl: "#",
     availability: "Available",
-    location: "Delhi, India",
-    avatar: "🔍",
-    photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150",
+    location: "Himatnagar, Gujarat, India",
+    avatar: "🎨",
+    photo: "/arman-sumra.jpg",
     skills: [
-      { name: "React.js & TypeScript", level: 87 },
-      { name: "Vitest / Jest Unit Testing", level: 95 },
-      { name: "Playwright / Cypress E2E Testing", level: 93 },
-      { name: "CI/CD & GitHub Actions", level: 86 },
-      { name: "Web Accessibility & SEO", level: 90 }
+      { name: "Adobe Photoshop", level: 95 },
+      { name: "Adobe Illustrator", level: 92 },
+      { name: "CorelDRAW", level: 88 },
+      { name: "Canva & Creative Layouts", level: 90 }
     ],
     timeline: [
       {
-        company: "AppTest Lab",
-        role: "QA React Engineer",
-        period: "2023 — Present",
-        description: "Creating test suites for complex React applications, setting up CI/CD test gates, and debugging complex edge-cases.",
+        company: "Professional & Freelance Projects",
+        role: "Graphic Designer",
+        period: "2020 — Present",
+        description: "Designing social media creatives, logo & brand identity, packaging designs, flyers, brochures, banners, product advertisements, and festival/promotional marketing campaigns.",
         current: true
-      },
-      {
-        company: "BetaSoft Systems",
-        role: "QA Tester & Developer",
-        period: "2021 — 2023",
-        description: "Performed manual and automated tests, analyzed web vitals, and wrote bug fixes in React frontends.",
-        current: false
       }
     ],
-    education: [
-      {
-        degree: "Bachelor of Science in Computer Science",
-        school: "Delhi University",
-        year: "2018 — 2021"
-      }
-    ]
+    education: []
   }
 ];
 

@@ -176,7 +176,7 @@ const TeamSection = () => {
                 <p className="text-sm text-foreground/90 leading-relaxed bg-secondary/30 p-4 rounded-2xl border border-border/40">
                   {selectedMember.bio}
                 </p>
-                <div className="flex flex-wrap gap-3 items-center">
+                <div className="flex flex-wrap gap-3 items-center pt-2">
                   <a
                     href={`mailto:${selectedMember.email}`}
                     className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors bg-secondary/50 px-3 py-1.5 rounded-lg border border-border"
@@ -191,24 +191,6 @@ const TeamSection = () => {
                     <Phone size={12} />
                     {selectedMember.phone}
                   </a>
-                  <div className="flex gap-2 ml-auto">
-                    <a
-                      href={selectedMember.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg bg-secondary/50 hover:bg-primary/10 hover:text-primary border border-border transition-all"
-                    >
-                      <Github size={14} />
-                    </a>
-                    <a
-                      href={selectedMember.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg bg-secondary/50 hover:bg-primary/10 hover:text-primary border border-border transition-all"
-                    >
-                      <Linkedin size={14} />
-                    </a>
-                  </div>
                 </div>
               </div>
 
@@ -276,20 +258,6 @@ const TeamSection = () => {
                 </div>
               )}
 
-              {/* Download Resume Link */}
-              <div className="pt-2">
-                <a
-                  href={`#`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    alert(`Downloading resume profile for ${selectedMember.name}`);
-                  }}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-primary text-primary-foreground font-semibold text-sm hover:opacity-95 shadow-md shadow-primary/10 transition-all"
-                >
-                  <Download size={16} />
-                  Download Resume (PDF)
-                </a>
-              </div>
             </div>
           )}
         </SheetContent>
