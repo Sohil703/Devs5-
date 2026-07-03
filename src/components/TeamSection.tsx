@@ -56,17 +56,13 @@ const TeamSection = () => {
                     {/* Glowing effect inside the card */}
                     <div className="absolute -top-24 -left-24 w-48 h-48 rounded-full bg-primary/5 blur-3xl pointer-events-none group-hover:bg-primary/10 transition-colors duration-500" />
                     
-                    {/* Member photo with availability indicator dot */}
+                    {/* Member photo */}
                     <div className="relative w-20 h-20 rounded-full mb-5 ring-4 ring-primary/5 ring-offset-2 ring-offset-background transition-transform duration-500 group-hover:scale-105 overflow-hidden flex-shrink-0">
                       <img 
                         src={member.photo} 
                         alt={member.name} 
                         className="w-full h-full object-cover"
                       />
-                      <span className={`absolute bottom-0.5 right-0.5 w-3.5 h-3.5 rounded-full border-2 border-background ${
-                        member.availability === "Available" ? "bg-emerald-500" :
-                        member.availability === "Almost Booked" ? "bg-amber-500" : "bg-red-500"
-                      }`} title={member.availability} />
                     </div>
 
                     <h3 className="font-display font-bold text-lg text-foreground leading-tight tracking-tight mb-2">
@@ -140,8 +136,12 @@ const TeamSection = () => {
             <div className="space-y-8 pt-4">
               <SheetHeader className="text-left space-y-4">
                 <div className="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
-                  <div className="w-20 h-20 rounded-2xl bg-gradient-primary flex items-center justify-center text-4xl text-white shadow-lg shadow-primary/10">
-                    {selectedMember.avatar}
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border/80 overflow-hidden shadow-lg flex-shrink-0">
+                    <img 
+                      src={selectedMember.photo} 
+                      alt={selectedMember.name} 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="space-y-1">
                     <SheetTitle className="font-display text-2xl font-bold">

@@ -76,49 +76,64 @@ export interface Stat {
 
 export const teamMembers: TeamMember[] = [
   {
-    id: "sohil",
-    name: "Sohil Sumra",
-    role: "Lead React Developer & Team Lead",
-    experience: "5+ Years",
-    bio: "Passionate Lead React Developer with 5+ years of experience specializing in state management, optimized rendering, and building enterprise dashboards and modular software. Ex-Jio frontend specialist who enjoys mentoring team members and designing scalable architectures.",
-    email: "sohil@antigravity-devs.com",
-    phone: "+91 98765 43210",
+    id: "ashad",
+    name: "Ashad Khira",
+    role: "Tech Lead",
+    experience: "6+ Years",
+    bio: "I'm a Tech Lead with strong full-stack experience, focused on building scalable, high-quality applications and guiding teams toward technical excellence. I enjoy making informed technical decisions, mentoring developers, and delivering reliable and efficient software solutions.\n\nI specialize in designing scalable architectures and infrastructure development, making key technical decisions, mentoring developers, and ensuring smooth end-to-end delivery. My strong background in back-end development allows me to bridge communication between design, development, and deployment teams seamlessly.",
+    email: "hello@ashad.dev",
+    phone: "+91 9537099393",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/",
     portfolio: "#",
-    resumeUrl: "#",
+    resumeUrl: "/ashad-khira-resume.pdf",
     availability: "Available",
-    location: "Mumbai, India",
+    location: "Ahmedabad, Gujarat, India",
     avatar: "👨‍💻",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150",
+    photo: "/ashad-khira.png",
     skills: [
-      { name: "React.js / Next.js", level: 95 },
-      { name: "TypeScript", level: 92 },
-      { name: "Redux Toolkit / Zustand", level: 94 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "Architecture & Design Patterns", level: 88 }
+      { name: "Python & Django/FastAPI", level: 95 },
+      { name: "Node.js & Backend", level: 90 },
+      { name: "Databases (MongoDB/SQL/Redis)", level: 91 },
+      { name: "DevOps (Docker/AWS/Nginx)", level: 88 },
+      { name: "Frontend (JS/Bootstrap)", level: 87 }
     ],
     timeline: [
       {
-        company: "Jio (Reliance)",
-        role: "Senior React Developer",
-        period: "2023 — Present",
-        description: "Leading frontend development for next-gen telecom dashboard portals, optimizing application load speed by 35%, and managing a team of 4 frontend engineers.",
+        company: "X-Byte Enterprise Solutions",
+        role: "Technical Team Leader",
+        period: "Aug 2025 — Present",
+        description: "Working as Technical Team Leader at X-Byte. My role involves leading the team, resolving technical challenges at the R&D level, and developing infrastructure.",
         current: true
       },
       {
-        company: "Tech Mahindra",
-        role: "React.js Developer",
-        period: "2021 — 2023",
-        description: "Developed customizable widgets and data visualization components for US clients' logistics dashboard systems.",
+        company: "X-Byte Enterprise Solutions",
+        role: "Senior Python Developer",
+        period: "Jan 2023 — Aug 2025",
+        description: "Worked as a Senior Python Developer at X-Byte. My responsibilities included developing full-stack websites, building web scraping pipelines, and creating APIs.",
+        current: false
+      },
+      {
+        company: "SSUSPL (Specific Step)",
+        role: "Support Executive (MIS)",
+        period: "Feb 2019 — Dec 2022",
+        description: "Worked at SSUSPL (Specific Step) as a Support Executive. My role involved monitoring data and working as an MIS resource.",
+        current: false
+      },
+      {
+        company: "Aegis Ltd.",
+        role: "Customer Care Executive",
+        period: "Jun 2018 — Jan 2019",
+        description: "Worked at Aegis Ltd. as a Customer Care Executive. My role involved handling and guiding customers over inbound calls.",
         current: false
       }
     ],
     education: [
       {
-        degree: "Bachelor of Technology in Computer Science",
-        school: "Gujarat Technological University",
-        year: "2017 — 2021"
+        degree: "Master of Computer Applications (MCA)",
+        school: "Government MCA college (Gujarat Technological University)",
+        year: "Jun 2021 — May 2023",
+        info: "I have completed my Master's degree in Computer Applications from the Government MCA college under the Gujarat Technological University."
       }
     ]
   },
@@ -493,7 +508,7 @@ export const testimonials: Testimonial[] = [
     company: "Apex Sales Solutions, USA",
     avatar: "👴",
     rating: 5,
-    text: "Sohil and his team built our custom Sales Lead CRM tracker from scratch. The interface is stunning, works perfectly on mobile, and the drag-and-drop pipeline was exactly what our sales team requested. Exceptional communication!"
+    text: "Ashad and his team built our custom Sales Lead CRM tracker from scratch. The interface is stunning, works perfectly on mobile, and the drag-and-drop pipeline was exactly what our sales team requested. Exceptional communication!"
   },
   {
     id: "t2",
