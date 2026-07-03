@@ -95,8 +95,7 @@ export const teamMembers: TeamMember[] = [
       { name: "Python & Django/FastAPI", level: 95 },
       { name: "Node.js & Backend", level: 90 },
       { name: "Databases (MongoDB/SQL/Redis)", level: 91 },
-      { name: "DevOps (Docker/AWS/Nginx)", level: 88 },
-      { name: "Frontend (JS/Bootstrap)", level: 87 }
+      { name: "DevOps (Docker/AWS/Nginx)", level: 88 }
     ],
     timeline: [
       {
@@ -185,98 +184,97 @@ export const teamMembers: TeamMember[] = [
     ]
   },
   {
-    id: "ishaan",
-    name: "Ishaan Sharma",
-    role: "UI/UX & React Developer",
+    id: "atesham",
+    name: "Atesham Sumra",
+    role: "Front End Developer",
     experience: "3+ Years",
-    bio: "Creative React Developer specializing in converting Figma designs into pixel-perfect web interfaces. Expert in interactive animations (Framer Motion) and creating reusable component libraries using Radix UI and Tailwind CSS.",
-    email: "ishaan@antigravity-devs.com",
-    phone: "+91 98765 43212",
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/",
-    portfolio: "#",
-    resumeUrl: "#",
-    availability: "Almost Booked",
-    location: "Pune, India",
-    avatar: "🎨",
-    photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=150&h=150",
-    skills: [
-      { name: "React.js / Next.js", level: 90 },
-      { name: "Tailwind CSS & CSS Grid", level: 96 },
-      { name: "Framer Motion & Animations", level: 94 },
-      { name: "Figma UI/UX Prototyping", level: 91 },
-      { name: "Shadcn / Radix / Chakra UI", level: 93 }
-    ],
-    timeline: [
-      {
-        company: "Studio Interactive",
-        role: "UI/UX React Engineer",
-        period: "2023 — Present",
-        description: "Crafting beautiful SaaS interfaces and interactive dashboards, creating and maintaining the internal Design System.",
-        current: true
-      },
-      {
-        company: "Freelance Designer & Developer",
-        role: "Web UI Specialist",
-        period: "2021 — 2023",
-        description: "Designed and built custom portfolios, e-commerce landing pages, and interactive presentation sites for startups.",
-        current: false
-      }
-    ],
-    education: [
-      {
-        degree: "Diploma in Web Design & UI Development",
-        school: "National Institute of Design",
-        year: "2020 — 2021"
-      }
-    ]
-  },
-  {
-    id: "ananya",
-    name: "Ananya Patel",
-    role: "Full Stack Developer",
-    experience: "4+ Years",
-    bio: "Experienced developer bridging Frontend and Backend. Specializes in building React user interfaces integrated with PHP/MySQL backends, secure REST API development, and database architecture optimization.",
-    email: "ananya@antigravity-devs.com",
-    phone: "+91 98765 43213",
+    bio: "Dedicated and detail-oriented Front End Developer with hands-on experience creating responsive, user-friendly, and modern web applications. Proficient in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, PHP, and Flutter. Passionate about building clean, scalable, and high-performance digital solutions while continuously learning new technologies.",
+    email: "sumraatesham1912@gmail.com",
+    phone: "+91 8401681016",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/",
     portfolio: "#",
     resumeUrl: "#",
     availability: "Available",
-    location: "Ahmedabad, India",
-    avatar: "💻",
-    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
+    location: "Himatnagar, Gujarat, India",
+    avatar: "🎨",
+    photo: "/atesham-sumra.jpg",
     skills: [
-      { name: "React.js", level: 88 },
-      { name: "PHP / Laravel", level: 92 },
-      { name: "MySQL & Database Optimization", level: 90 },
-      { name: "REST API Development", level: 93 },
-      { name: "Security & JWT Authentication", level: 87 }
+      { name: "Bootstrap & Tailwind CSS", level: 91 },
+      { name: "HTML5 & CSS3 Development", level: 93 },
+      { name: "JavaScript & jQuery", level: 88 },
+      { name: "PHP & Web Development", level: 80 },
+      { name: "Flutter Mobile Apps", level: 75 }
     ],
     timeline: [
       {
-        company: "WebSpire Technologies",
-        role: "Full Stack Developer",
-        period: "2022 — Present",
-        description: "Developing school management portals and ERP software, optimizing SQL queries, and building secure RESTful endpoints.",
+        company: "Tanish Info Service",
+        role: "Web Developer",
+        period: "Dec 2024 — Present",
+        description: "Designed and developed responsive, user-friendly websites and web applications using HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and PHP. Converted UI/UX designs into clean, reusable, and maintainable frontend code.",
         current: true
       },
       {
-        company: "Sigma IT Solutions",
-        role: "Junior Web Developer",
-        period: "2020 — 2022",
-        description: "Built custom admin panels with PHP (CodeIgniter) and MySQL, maintaining legacy codebase and introducing React modules.",
+        company: "Kornea Digital",
+        role: "Web Developer",
+        period: "Jun 2023 — Jun 2024",
+        description: "Developed user interfaces with modern JavaScript frameworks. Converted design mockups into pixel-perfect pages, utilized Git/GitHub for version control, and built UI pages for Flutter mobile applications.",
+        current: false
+      },
+      {
+        company: "Sun Electronics",
+        role: "Computer Operator",
+        period: "Jan 2019 — Apr 2023",
+        description: "Generated reports covering data, system operation, and error monitoring. Maintained a high level of accuracy in data entry tasks and spreadsheet management.",
         current: false
       }
     ],
     education: [
       {
-        degree: "Master of Science in Information Technology",
-        school: "Nirma University",
-        year: "2018 — 2020"
+        degree: "Master of Commerce (M.Com)",
+        school: "Hemchandracharya North Gujarat University (HNGU)",
+        year: "2021 — 2023"
+      },
+      {
+        degree: "Bachelor of Commerce (B.Com)",
+        school: "Hemchandracharya North Gujarat University (HNGU)",
+        year: "2018 — 2021"
       }
     ]
+  },
+  {
+    id: "zenul",
+    name: "Zenul Sumara",
+    role: "Unity Game Developer",
+    experience: "2 Years",
+    bio: "I'm a Unity Game Developer with 2+ years of experience building engaging mobile games using Unity and C#. I've worked on a variety of genres, including puzzle, hypercasual, and shooter games, with a strong focus on gameplay mechanics, performance optimization, and polished user experiences. I enjoy turning ideas into fun, high-quality games and continuously expanding my skills by exploring new game development techniques and best practices.",
+    email: "zenulwork@gmail.com",
+    phone: "+91 9638528117",
+    github: "https://github.com/",
+    linkedin: "https://linkedin.com/",
+    portfolio: "#",
+    resumeUrl: "#",
+    availability: "Available",
+    location: "Jamnagar, Gujarat, India",
+    avatar: "💻",
+    photo: "/zenul-sumara.jpg",
+    skills: [
+      { name: "Unity Game Engine", level: 93 },
+      { name: "C# Programming", level: 90 },
+      { name: "Game Mechanics & Physics", level: 88 },
+      { name: "Performance Optimization", level: 85 },
+      { name: "Mobile Game UI/UX", level: 80 }
+    ],
+    timeline: [
+      {
+        company: "Tap2Play Studio",
+        role: "Unity Game Developer",
+        period: "Mar 2023 — Present",
+        description: "Building engaging mobile games using Unity and C#. Developing gameplay mechanics, performance optimization pipelines, and polished user experiences across multiple genres including puzzle, hypercasual, and shooter games.",
+        current: true
+      }
+    ],
+    education: []
   },
   {
     id: "riya",
