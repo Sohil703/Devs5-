@@ -19,16 +19,12 @@ export const useThemeColor = () => {
 
 export const ThemeColorProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState<ColorScheme>(() => {
-    if (typeof window !== "undefined") {
-      const savedThemeId = localStorage.getItem("theme-color");
-      const found = colorThemes.find((t) => t.id === savedThemeId);
-      if (found) return found;
-    }
-    return colorThemes[0]; // mint-breeze default
+    const sapphire = colorThemes.find((t) => t.id === "royal-sapphire");
+    return sapphire || colorThemes[0];
   });
 
-  const applyTheme = (theme: ColorScheme, isDark: boolean) => {
-    const vars = isDark ? theme.dark : theme.light;
+  const applyTheme = (theme: ColorScheme) => {
+    const vars = theme.light;
     const root = document.documentElement;
     root.style.setProperty("--primary", vars.primary);
     root.style.setProperty("--ring", vars.primary);
@@ -42,28 +38,15 @@ export const ThemeColorProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     if (theme) {
       setCurrentTheme(theme);
       localStorage.setItem("theme-color", id);
-      const isDark = document.documentElement.classList.contains("dark");
-      applyTheme(theme, isDark);
+      applyTheme(theme);
     }
   };
 
   useEffect(() => {
-    // Initial application of the theme
-    const isDark = document.documentElement.classList.contains("dark");
-    applyTheme(currentTheme, isDark);
-
-    // Set up MutationObserver to react to light/dark mode changes toggle on HTML element
-    const observer = new MutationObserver(() => {
-      const isDarkNow = document.documentElement.classList.contains("dark");
-      applyTheme(currentTheme, isDarkNow);
-    });
-
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-
-    return () => observer.disconnect();
+    // Explicitly remove dark class to force light mode
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+    applyTheme(currentTheme);
   }, [currentTheme]);
 
   return (

@@ -59,23 +59,17 @@ const ColorCustomizer = () => {
 
                   {/* Circular preview dots */}
                   <div className="flex items-center justify-between w-full mt-2">
-                    <div className="flex gap-1">
-                      {/* Light mode dot */}
+                    <div className="flex gap-1.5">
+                      {/* Primary mode dot */}
                       <span
                         className="w-3.5 h-3.5 rounded-full border border-border shadow-sm"
                         style={{ backgroundColor: `hsl(${theme.light.primary})` }}
-                        title="Light Theme Primary"
-                      />
-                      {/* Dark mode dot */}
-                      <span
-                        className="w-3.5 h-3.5 rounded-full border border-border shadow-sm"
-                        style={{ backgroundColor: `hsl(${theme.dark.primary})` }}
-                        title="Dark Theme Primary"
+                        title="Theme Primary"
                       />
                       {/* Accent color dot */}
                       <span
                         className="w-3.5 h-3.5 rounded-full border border-border shadow-sm"
-                        style={{ backgroundColor: `hsl(${theme.dark.accent})` }}
+                        style={{ backgroundColor: `hsl(${theme.light.accent})` }}
                         title="Accent Color"
                       />
                     </div>
