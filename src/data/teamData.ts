@@ -138,7 +138,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "sohil",
     name: "Sohil Sumra",
-    role: "FrontEnd developer/engineer",
+    role: "FrontEnd developer",
     experience: "3+ Years",
     bio: "Passionate React Developer specializing in building modern user-facing web applications, responsive user interfaces, and robust frontend architectures. Expert in TypeScript, Tailwind CSS, and Tauri desktop application development.",
     email: "sohilsumra703@gmail.com",
@@ -161,7 +161,7 @@ export const teamMembers: TeamMember[] = [
     timeline: [
       {
         company: "Emaad Infotech",
-        role: " FrontEnd developer/engineer",
+        role: " FrontEnd developer",
         period: "2023 — Present",
         description: "Develop new user-facing features using React.js and related front-end technologies. Translate UI/UX designs into responsive web pages. Integrate APIs and optimize application for scalability and accessibility.",
         current: true
@@ -185,7 +185,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "atesham",
     name: "Atesham Sumra",
-    role: "Web Developer/engineer",
+    role: "Web Developer",
     experience: "3+ Years",
     bio: "Dedicated and detail-oriented Front End Developer with hands-on experience creating responsive, user-friendly, and modern web applications. Proficient in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, PHP, and Flutter. Passionate about building clean, scalable, and high-performance digital solutions while continuously learning new technologies.",
     email: "sumraatesham1912@gmail.com",
@@ -208,7 +208,7 @@ export const teamMembers: TeamMember[] = [
     timeline: [
       {
         company: "Tanish Info Service",
-        role: "Web Developer/engineer",
+        role: "Web Developer",
         period: "Dec 2024 — Present",
         description: "Designed and developed responsive, user-friendly websites and web applications using HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and PHP. Converted UI/UX designs into clean, reusable, and maintainable frontend code.",
         current: true
