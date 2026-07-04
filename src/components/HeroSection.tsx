@@ -41,7 +41,7 @@ const HeroSection = () => {
             transition={{ delay: 0.15, duration: 0.5 }}
             className="inline-flex items-center px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-semibold uppercase tracking-wider shadow-sm backdrop-blur-sm"
           >
-            <span>5 Developers Online & Available</span>
+            <span>FULL-STACK EXPERTS READY TO BUILD</span>
           </motion.div>
 
           {/* Large Title */}
@@ -64,7 +64,7 @@ const HeroSection = () => {
             <div className="w-px h-8 bg-border hidden sm:block" />
             <div className="text-center">
               <p className="text-xs text-muted-foreground uppercase font-semibold tracking-widest">Main Stack</p>
-              <p className="text-xl font-bold text-primary">React & TS</p>
+              <p className="text-xl font-bold text-primary">React, Node and Python</p>
             </div>
             <div className="w-px h-8 bg-border hidden sm:block" />
             <div className="text-center">

@@ -92,10 +92,9 @@ export const teamMembers: TeamMember[] = [
     avatar: "👨‍💻",
     photo: "/ashad-khira.png",
     skills: [
-      { name: "Python & Django/FastAPI", level: 95 },
-      { name: "Node.js & Backend", level: 90 },
-      { name: "Databases (MongoDB/SQL/Redis)", level: 91 },
-      { name: "DevOps (Docker/AWS/Nginx)", level: 88 }
+      { name: "Backend (Python/Django/FastAPI/Flask)", level: 95 },
+      { name: "Database (MongoDB/SQL)", level: 91 },
+      { name: "DevOps & Deployment (AWS/NginX)", level: 88 }
     ],
     timeline: [
       {
@@ -139,7 +138,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "sohil",
     name: "Sohil Sumra",
-    role: "React Developer",
+    role: "FrontEnd developer/engineer",
     experience: "3+ Years",
     bio: "Passionate React Developer specializing in building modern user-facing web applications, responsive user interfaces, and robust frontend architectures. Expert in TypeScript, Tailwind CSS, and Tauri desktop application development.",
     email: "sohilsumra703@gmail.com",
@@ -162,7 +161,7 @@ export const teamMembers: TeamMember[] = [
     timeline: [
       {
         company: "Emaad Infotech",
-        role: "React Developer",
+        role: " FrontEnd developer/engineer",
         period: "2023 — Present",
         description: "Develop new user-facing features using React.js and related front-end technologies. Translate UI/UX designs into responsive web pages. Integrate APIs and optimize application for scalability and accessibility.",
         current: true
@@ -186,7 +185,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "atesham",
     name: "Atesham Sumra",
-    role: "Front End Developer",
+    role: "Web Developer/engineer",
     experience: "3+ Years",
     bio: "Dedicated and detail-oriented Front End Developer with hands-on experience creating responsive, user-friendly, and modern web applications. Proficient in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, PHP, and Flutter. Passionate about building clean, scalable, and high-performance digital solutions while continuously learning new technologies.",
     email: "sumraatesham1912@gmail.com",
@@ -209,7 +208,7 @@ export const teamMembers: TeamMember[] = [
     timeline: [
       {
         company: "Tanish Info Service",
-        role: "Web Developer",
+        role: "Web Developer/engineer",
         period: "Dec 2024 — Present",
         description: "Designed and developed responsive, user-friendly websites and web applications using HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, and PHP. Converted UI/UX designs into clean, reusable, and maintainable frontend code.",
         current: true
@@ -281,7 +280,7 @@ export const teamMembers: TeamMember[] = [
     name: "Arman Sumra",
     role: "Graphic Designer",
     experience: "4+ Years",
-    bio: "I'm a Graphic Designer with 3+ years of experience creating creative and impactful designs for both digital and print media. I specialize in social media creatives, branding, logo design, packaging, and marketing materials. I focus on delivering high-quality visuals that help businesses build a strong brand identity and connect with their audience. I enjoy turning ideas into eye-catching designs while continuously learning new design trends and techniques.",
+    bio: "I'm a Graphic Designer with 4+ years of experience creating creative and impactful designs for both digital and print media. I specialize in social media creatives, branding, logo design, packaging, and marketing materials. I focus on delivering high-quality visuals that help businesses build a strong brand identity and connect with their audience. I enjoy turning ideas into eye-catching designs while continuously learning new design trends and techniques.",
     email: "armaansumra786@gmail.com",
     phone: "9428567512",
     github: "https://github.com/",
