@@ -404,8 +404,8 @@ export const projects: Project[] = [
 export const services: Service[] = [
   {
     icon: "Code2",
-    title: "React & Next.js Development",
-    description: "Building fast, SEO-friendly, and highly scalable web applications utilizing React and Next.js framework."
+    title: "Web and App development",
+    description: "Building fast, SEO-friendly, and highly scalable web and mobile applications tailored to your business needs."
   },
   {
     icon: "LayoutDashboard",
@@ -438,9 +438,9 @@ export const services: Service[] = [
     description: "Seamless connections with RESTful endpoints, Stripe payments, Firebase, authentication providers, and third-party SaaS APIs."
   },
   {
-    icon: "Wrench",
-    title: "Website Maintenance",
-    description: "Regular updates, bug fixing, test suite configurations, and performance audits to keep your platform running smoothly."
+    icon: "Database",
+    title: "Data Scraping",
+    description: "Extracting structured data from web sources, building robust scraping pipelines, and automating data aggregation."
   }
 ];
 

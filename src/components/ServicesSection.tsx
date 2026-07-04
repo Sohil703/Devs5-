@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { services } from "@/data/teamData";
-import { Code2, LayoutDashboard, Network, GraduationCap, ShoppingBag, MonitorPlay, Cpu, Wrench, LucideIcon } from "lucide-react";
+import { Code2, LayoutDashboard, Network, GraduationCap, ShoppingBag, MonitorPlay, Cpu, Database, LucideIcon } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
   Code2: Code2,
@@ -11,7 +11,7 @@ const iconMap: Record<string, LucideIcon> = {
   ShoppingBag: ShoppingBag,
   MonitorPlay: MonitorPlay,
   Cpu: Cpu,
-  Wrench: Wrench,
+  Database: Database,
 };
 
 const ServicesSection = () => {
