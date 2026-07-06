@@ -78,10 +78,10 @@ export const teamMembers: TeamMember[] = [
   {
     id: "madni",
     name: "Madni Haradwala",
-    role: "Python Developer",
+    role: "Back-end developer",
     experience: "2+ Years",
     bio: "I am a Python Developer specializing in web scraping, data extraction, and backend development. I focus on building scalable web scrapers, crawlers, and data pipelines to extract value from complex websites and dynamic content. I have extensive experience working with technologies like Scrapy, BeautifulSoup, and Selenium to bypass anti-scraping measures and optimize crawling efficiency.",
-    email: "info@coderaim.com",
+    email: "Info.cchsolution@gmail.com",
     phone: "+91 90994 40844",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/",
@@ -99,7 +99,7 @@ export const teamMembers: TeamMember[] = [
     timeline: [
       {
         company: "X-Byte",
-        role: "Python Developer",
+        role: "Back-end developer",
         period: "2023 — 2025",
         description: "Developed and maintained scalable Python-based web scrapers and crawlers to extract data from e-commerce, real estate, travel, and other domains. Built custom scraping solutions using libraries like Scrapy, BeautifulSoup, Selenium, and Requests, handling CAPTCHAs, IP blocking, and dynamic content. Optimized scraper performance, reducing runtime by up to 30% through asynchronous processing and efficient selector strategies.",
         current: false
