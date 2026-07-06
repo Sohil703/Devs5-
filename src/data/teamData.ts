@@ -603,7 +603,7 @@ export const testimonials: Testimonial[] = [
 
 export const stats: Stat[] = [
   { label: "Projects Completed", value: 45, suffix: "+" },
-  { label: "Years Combined Experience", value: 5, suffix: "+" },
+  { label: "Years Combined Experience", value: 6, suffix: "+" },
   { label: "Happy Clients", value: 30, suffix: "+" },
   { label: "Team Members", value: 5, suffix: "" }
 ];
