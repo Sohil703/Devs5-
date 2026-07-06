@@ -76,21 +76,21 @@ export interface Stat {
 
 export const teamMembers: TeamMember[] = [
   {
-    id: "ashad",
-    name: "Ashad Khira",
-    role: "Tech Lead",
-    experience: "6+ Years",
-    bio: "I'm a Tech Lead with strong full-stack experience, focused on building scalable, high-quality applications and guiding teams toward technical excellence. I enjoy making informed technical decisions, mentoring developers, and delivering reliable and efficient software solutions.\n\nI specialize in designing scalable architectures and infrastructure development, making key technical decisions, mentoring developers, and ensuring smooth end-to-end delivery. My strong background in back-end development allows me to bridge communication between design, development, and deployment teams seamlessly.",
-    email: "hello@ashad.dev",
-    phone: "+91 9537099393",
+    id: "madni",
+    name: "Madni Haradwala",
+    role: "Python Developer",
+    experience: "2+ Years",
+    bio: "I am a Python Developer specializing in web scraping, data extraction, and backend development. I focus on building scalable web scrapers, crawlers, and data pipelines to extract value from complex websites and dynamic content. I have extensive experience working with technologies like Scrapy, BeautifulSoup, and Selenium to bypass anti-scraping measures and optimize crawling efficiency.",
+    email: "info@coderaim.com",
+    phone: "+91 90994 40844",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/",
-    portfolio: "#",
-    resumeUrl: "/ashad-khira-resume.pdf",
+    portfolio: "https://www.coderaim.com",
+    resumeUrl: "#",
     availability: "Available",
     location: "Ahmedabad, Gujarat, India",
     avatar: "👨‍💻",
-    photo: "/ashad-khira.png",
+    photo: "/madni-haradwala.png",
     skills: [
       { name: "Backend (Python/Django/FastAPI/Flask)", level: 95 },
       { name: "Database (MongoDB/SQL)", level: 91 },
@@ -98,40 +98,19 @@ export const teamMembers: TeamMember[] = [
     ],
     timeline: [
       {
-        company: "X-Byte Enterprise Solutions",
-        role: "Technical Team Leader",
-        period: "Aug 2025 — Present",
-        description: "Working as Technical Team Leader at X-Byte. My role involves leading the team, resolving technical challenges at the R&D level, and developing infrastructure.",
-        current: true
-      },
-      {
-        company: "X-Byte Enterprise Solutions",
-        role: "Senior Python Developer",
-        period: "Jan 2023 — Aug 2025",
-        description: "Worked as a Senior Python Developer at X-Byte. My responsibilities included developing full-stack websites, building web scraping pipelines, and creating APIs.",
-        current: false
-      },
-      {
-        company: "SSUSPL (Specific Step)",
-        role: "Support Executive (MIS)",
-        period: "Feb 2019 — Dec 2022",
-        description: "Worked at SSUSPL (Specific Step) as a Support Executive. My role involved monitoring data and working as an MIS resource.",
-        current: false
-      },
-      {
-        company: "Aegis Ltd.",
-        role: "Customer Care Executive",
-        period: "Jun 2018 — Jan 2019",
-        description: "Worked at Aegis Ltd. as a Customer Care Executive. My role involved handling and guiding customers over inbound calls.",
+        company: "X-Byte",
+        role: "Python Developer",
+        period: "2023 — 2025",
+        description: "Developed and maintained scalable Python-based web scrapers and crawlers to extract data from e-commerce, real estate, travel, and other domains. Built custom scraping solutions using libraries like Scrapy, BeautifulSoup, Selenium, and Requests, handling CAPTCHAs, IP blocking, and dynamic content. Optimized scraper performance, reducing runtime by up to 30% through asynchronous processing and efficient selector strategies.",
         current: false
       }
     ],
     education: [
       {
-        degree: "Master of Computer Applications (MCA)",
-        school: "Government MCA college (Gujarat Technological University)",
-        year: "Jun 2021 — May 2023",
-        info: "I have completed my Master's degree in Computer Applications from the Government MCA college under the Gujarat Technological University."
+        degree: "Bachelor of Computer Applications (BCA)",
+        school: "DL Patel institute",
+        year: "2020 — 2023",
+        info: "Completed Bachelor of Computer Applications (BCA) with a CGPA of 7.7."
       }
     ]
   },
@@ -329,23 +308,23 @@ export const projects: Project[] = [
     color: "from-blue-500/20 to-indigo-500/5",
     screenshot: "/taxiwale.png"
   },
-  {
-    id: "proj2",
-    title: "School Management System",
-    description: "A full-scale portal for schools to manage student registration, grading sheets, fee collections, staff schedules, and direct parent-teacher chat logs.",
-    category: "custom",
-    tech: ["React", "TypeScript", "Tailwind CSS", "PHP", "MySQL"],
-    features: [
-      "Automated attendance logs using custom calendars",
-      "Student report card generator with custom grading logic",
-      "Student registration and secure online fee collection",
-      "Direct chat dashboard with JWT authentication"
-    ],
-    githubUrl: "#",
-    liveUrl: "https://emaad-school.pages.dev/",
-    color: "from-emerald-500/20 to-teal-500/5",
-    screenshot: "/emaad-school.png"
-  },
+  // {
+  //   id: "proj2",
+  //   title: "School Management System",
+  //   description: "A full-scale portal for schools to manage student registration, grading sheets, fee collections, staff schedules, and direct parent-teacher chat logs.",
+  //   category: "custom",
+  //   tech: ["React", "TypeScript", "Tailwind CSS", "PHP", "MySQL"],
+  //   features: [
+  //     "Automated attendance logs using custom calendars",
+  //     "Student report card generator with custom grading logic",
+  //     "Student registration and secure online fee collection",
+  //     "Direct chat dashboard with JWT authentication"
+  //   ],
+  //   githubUrl: "#",
+  //   liveUrl: "https://emaad-school.pages.dev/",
+  //   color: "from-emerald-500/20 to-teal-500/5",
+  //   screenshot: "/emaad-school.png"
+  // },
   {
     id: "proj3",
     title: "Wafa Naqab Shop",
@@ -398,6 +377,114 @@ export const projects: Project[] = [
     liveUrl: "https://play.google.com/store/apps/details?id=com.svatantrahomesloan",
     color: "from-rose-500/20 to-red-500/5",
     screenshot: "/svatantra.png"
+  },
+  {
+    id: "proj6",
+    title: "Trend Tree Media — Social Media Agency",
+    description: "A modern, visually engaging, and fully responsive website designed for a social media marketing and video production company to showcase their creative services, portfolio, and digital growth expertise.",
+    category: "custom",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    features: [
+      "Modern layout with bold visuals and smooth animations",
+      "Interactive sections showcasing social media strategy, reels, and video production",
+      "Fully responsive design optimized for all screen sizes (mobile, tablet, desktop)",
+      "Strategic placement of high-quality visuals to demonstrate brand value",
+      "Clean navigation allowing potential clients to easily explore services"
+    ],
+    githubUrl: "#",
+    liveUrl: "https://trendtreemedia.com/",
+    color: "from-orange-500/20 to-amber-500/5",
+    screenshot: "/trend-tree-media.png"
+  },
+  {
+    id: "proj7",
+    title: "Goldfire — Dynamic E-Commerce Platform",
+    description: "A fully functional and dynamic E-Commerce web application featuring a user-friendly frontend storefront for customers and a powerful administrative dashboard for seamless product and content management.",
+    category: "ecommerce",
+    tech: ["NextJS", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "JWT"],
+    features: [
+      "Dynamic product, category, and subcategory management",
+      "WhatsApp enquiry integration for direct client contact",
+      "Dynamic CMS pages for flexible website content administration",
+      "Secure Admin authentication powered by JSON Web Tokens (JWT)",
+      "Dashboard insights for tracking store metrics and inventory"
+    ],
+    githubUrl: "#",
+    liveUrl: "https://www.goldfire.in/",
+    color: "from-yellow-600/20 to-amber-600/5",
+    screenshot: "/goldfire.png"
+  },
+  {
+    id: "proj8",
+    title: "Unimak — Student Admission & Management Portal",
+    description: "An automated online University Admission Portal designed to streamline verification processes after bank fee payments. Features customized dynamic forms, secure OTP login integration, and multi-dashboard interfaces.",
+    category: "custom",
+    tech: ["ReactJS", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "JWT"],
+    features: [
+      "Secure OTP-based authentication via SMS gateway integration",
+      "Dynamic form builder allowing customizable program-specific fields",
+      "Integrated system workflows linking bank fee posts directly to portal credentials",
+      "Comprehensive dashboards for students and administrative reviewers",
+      "In-app notifications and SMS updates for application approvals and reviews"
+    ],
+    githubUrl: "#",
+    liveUrl: "https://unimakapp.com/login",
+    color: "from-blue-600/20 to-sky-600/5",
+    screenshot: "/unimak.png"
+  },
+  {
+    id: "proj9",
+    title: "Labdhi Finserv — Financial Solutions Platform",
+    description: "A modern and professional financial services website developed to showcase various financial solutions with a clean, responsive, and user-friendly interface. Focuses on building trust, robust online presence, and streamlined client contact channels.",
+    category: "custom",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    features: [
+      "Modern layout showcasing business, legal, and IT solutions",
+      "Fully responsive interface ensuring seamless navigation on all screen sizes",
+      "Interactive sections highlighting client achievements and registrations",
+      "Streamlined call-to-actions (CTAs) including 'Get a Quote' and direct WhatsApp links",
+      "Optimized accessibility and speed to improve digital outreach and brand trust"
+    ],
+    githubUrl: "#",
+    liveUrl: "https://labdhifinserv.in/",
+    color: "from-emerald-600/20 to-green-600/5",
+    screenshot: "/labdhi-finserv.png"
+  },
+  {
+    id: "proj10",
+    title: "Club Aurevia — Premium Travel Membership",
+    description: "A premium travel membership platform offering exclusive vacation memberships, luxury hotel bookings, and curated travel experiences. Designed with an elegant, responsive interface to streamline user registration and booking inquiries.",
+    category: "custom",
+    tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    features: [
+      "Elegant, high-end travel branding with full-screen hero backgrounds",
+      "Vacation membership explorer and curated destination catalogs",
+      "Responsive and fluid navigation optimized for desktop and mobile viewports",
+      "Integrated inquiry forms and click-to-chat WhatsApp communication channels",
+      "Fast page loading speeds and optimized performance to maximize customer conversions"
+    ],
+    githubUrl: "#",
+    liveUrl: "https://clubaurevia.com/",
+    color: "from-teal-500/20 to-emerald-500/5",
+    screenshot: "/club-aurevia.png"
+  },
+  {
+    id: "proj11",
+    title: "NAPCO Alu Systems — Corporate & Glazing Solutions",
+    description: "A professional corporate website developed for NAPCO Alu Systems, a leading manufacturer and supplier of premium aluminium doors, windows, and architectural glazing solutions. Designed to highlight product specs and generate direct business leads.",
+    category: "custom",
+    tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    features: [
+      "Product catalog showcasing architectural doors, windows, and glazing solutions",
+      "Product specification sheets and completed project showcase portfolio",
+      "Modern, responsive corporate layout optimized for all device viewports",
+      "Interactive inquiry forms and contact links to gather commercial leads",
+      "SEO optimization and fast page loading speeds to increase web visibility"
+    ],
+    githubUrl: "#",
+    liveUrl: "https://napcoalusystems.com/",
+    color: "from-slate-500/20 to-blue-500/5",
+    screenshot: "/napco-alu.png"
   }
 ];
 
@@ -494,7 +581,7 @@ export const testimonials: Testimonial[] = [
     company: "Apex Sales Solutions, USA",
     avatar: "👴",
     rating: 5,
-    text: "Ashad and his team built our custom Sales Lead CRM tracker from scratch. The interface is stunning, works perfectly on mobile, and the drag-and-drop pipeline was exactly what our sales team requested. Exceptional communication!"
+    text: "Madni and his team built our custom Sales Lead CRM tracker from scratch. The interface is stunning, works perfectly on mobile, and the drag-and-drop pipeline was exactly what our sales team requested. Exceptional communication!"
   },
   {
     id: "t2",
