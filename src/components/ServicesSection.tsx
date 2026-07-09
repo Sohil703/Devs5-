@@ -1,7 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { services } from "@/data/teamData";
-import { Code2, LayoutDashboard, Network, GraduationCap, ShoppingBag, MonitorPlay, Cpu, Database, LucideIcon } from "lucide-react";
+import { Code2, LayoutDashboard, Network, GraduationCap, ShoppingBag, MonitorPlay, Cpu, Database, LucideIcon, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const iconMap: Record<string, LucideIcon> = {
   Code2: Code2,
@@ -38,7 +39,7 @@ const ServicesSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {services.map((service, i) => {
+            {services.slice(0, 4).map((service, i) => {
               const Icon = iconMap[service.icon] || Code2;
               return (
                 <motion.div
@@ -60,6 +61,16 @@ const ServicesSection = () => {
                 </motion.div>
               );
             })}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-primary text-primary-foreground text-sm font-semibold hover:opacity-95 shadow-lg shadow-primary/10 hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+            >
+              View More Services
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </motion.div>
       </div>

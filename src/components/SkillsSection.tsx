@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Monitor, Server, Wrench } from "lucide-react";
+import { Monitor, Server, Wrench, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const skillGroups = [
   {
@@ -71,7 +72,7 @@ const SkillsSection = () => {
                     {group.title}
                   </h3>
                   <div className="space-y-5">
-                    {group.skills.map((skill, si) => (
+                    {group.skills.slice(0, 3).map((skill, si) => (
                       <motion.div
                         key={skill.name}
                         initial={{ opacity: 0, x: -10 }}
@@ -96,6 +97,16 @@ const SkillsSection = () => {
                 </div>
               );
             })}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/skills"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-primary text-primary-foreground text-sm font-semibold hover:opacity-95 shadow-lg shadow-primary/10 hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+            >
+              View More Skills
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </motion.div>
       </div>

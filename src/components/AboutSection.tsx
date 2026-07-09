@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Layers, Users2, ShieldCheck, HeartHandshake } from "lucide-react";
+import { Code2, Layers, Users2, ShieldCheck, HeartHandshake, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const highlights = [
   { icon: Code2, label: "Clean React Architecture" },
@@ -35,13 +36,22 @@ const AboutSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center mb-12">
-            <div className="md:col-span-7 space-y-4 text-muted-foreground leading-relaxed text-base md:text-lg">
+            <div className="md:col-span-7 space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
               <p>
                 We are a passionate team of designers and developers specializing in graphic design, frontend development, backend development, and Unity game development. With over <strong className="text-foreground font-semibold">6+ years of combined industry experience</strong>, we've successfully delivered impactful digital solutions that help businesses grow.
               </p>
               <p>
                 Our expertise spans websites, web applications, custom software, game development, and digital media. We take pride in building long term relationships with our clients, many of whom return to us for future projects because of our commitment to quality, reliability, and results.
               </p>
+              <div className="pt-2">
+                <Link
+                  to="/about"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-primary text-primary-foreground text-xs font-semibold hover:opacity-95 shadow-md shadow-primary/10 hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+                >
+                  View More About Us
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
             </div>
 
             <div className="md:col-span-5 bg-glass p-6 rounded-2xl border border-border/80 shadow-xl space-y-4">

@@ -59,7 +59,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pt-4">
             <div className="text-center">
               <p className="text-xs text-muted-foreground uppercase font-semibold tracking-widest">Completed</p>
-              <p className="text-xl font-bold text-foreground">45+ Systems</p>
+              <p className="text-xl font-bold text-foreground">45+ Projects</p>
             </div>
             <div className="w-px h-8 bg-border hidden sm:block" />
             <div className="text-center">
@@ -79,7 +79,7 @@ const HeroSection = () => {
               href="#team"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-primary text-primary-foreground font-semibold text-sm hover:opacity-95 shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5"
             >
-              Meet The Team
+              Explore CCH
               <Users size={16} />
             </a>
           </div>

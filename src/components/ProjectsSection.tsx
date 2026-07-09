@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, Layers, Play } from "lucide-react";
+import { ExternalLink, Github, Layers, Play, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { projects } from "@/data/teamData";
 
 const ProjectsSection = () => {
@@ -27,7 +28,7 @@ const ProjectsSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
-            {projects.map((project, i) => (
+            {projects.slice(0, 2).map((project, i) => (
               <motion.div
                 key={project.id}
                 layout
@@ -100,6 +101,16 @@ const ProjectsSection = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/projects"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-primary text-primary-foreground text-sm font-semibold hover:opacity-95 shadow-lg shadow-primary/10 hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+            >
+              View More Projects
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </motion.div>
       </div>
