@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4 col-span-1 md:col-span-5">
             <Link to="/" className="flex items-center gap-2 group">
               <img src="/logo.png" alt="CH Solution" className="h-8 w-auto transition-transform duration-300 group-hover:scale-105" />
-              <span className="font-display text-xl font-bold text-gradient">CH Solution</span>
+              <span className="font-display text-xl font-bold text-gradient">CCH Solution</span>
             </Link>
             <p className="text-xs text-muted-foreground/80 leading-relaxed max-w-sm">
               We are a collaborative squad of 5 passionate React & Full-Stack Developers building modern, secure, and production-grade dashboards, CRM/ERP systems, and custom web applications.
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="w-full h-px bg-border/40 my-6" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-muted-foreground">
-          <p>© {new Date().getFullYear()} CH Solution. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} CCH Solution. All rights reserved.</p>
           <div className="flex gap-4">
             <Link to="/privacy-policy" className="hover:underline">Privacy Policy</Link>
             <Link to="/terms-and-conditions" className="hover:underline">Terms of Service</Link>

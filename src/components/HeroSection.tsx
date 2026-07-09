@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Send, Users, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { teamMembers } from "@/data/teamData";
 
 const HeroSection = () => {
@@ -75,13 +76,13 @@ const HeroSection = () => {
 
           {/* Action Buttons */}
           <div className="flex justify-center pt-6">
-            <a
-              href="#team"
+            <Link
+              to="/services"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-primary text-primary-foreground font-semibold text-sm hover:opacity-95 shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5"
             >
               Explore CCH
               <Users size={16} />
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

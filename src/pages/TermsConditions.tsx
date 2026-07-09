@@ -138,7 +138,7 @@ const TermsConditions = () => {
                     <strong className="text-foreground">Country</strong> refers to: Gujarat, India
                   </li>
                   <li>
-                    <strong className="text-foreground">Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in these Terms and Conditions) refers to CH Solution, Ahmedabad, Gujarat, India 380001.
+                    <strong className="text-foreground">Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in these Terms and Conditions) refers to CCH Solution, Ahmedabad, Gujarat, India 380001.
                   </li>
                   <li>
                     <strong className="text-foreground">Device</strong> means any device that can access the Service such as a computer, a cell phone or a digital tablet.
@@ -153,7 +153,7 @@ const TermsConditions = () => {
                     <strong className="text-foreground">Third-Party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third party that is displayed, included, made available, or linked to through the Service.
                   </li>
                   <li>
-                    <strong className="text-foreground">Website</strong> refers to CH Solution, accessible from{" "}
+                    <strong className="text-foreground">Website</strong> refers to CCH Solution, accessible from{" "}
                     <a href="https://chsolution.com/" rel="external nofollow noopener" target="_blank" className="text-primary hover:underline font-medium">
                       https://chsolution.com/
                     </a>.

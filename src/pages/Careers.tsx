@@ -113,7 +113,7 @@ const Careers = () => {
               className="font-display text-4xl md:text-6xl font-bold leading-tight"
             >
               Build the Future <br />
-              <span className="text-gradient">With CH Solution</span>
+              <span className="text-gradient">With CCH Solution</span>
             </motion.h1>
             
             <motion.p

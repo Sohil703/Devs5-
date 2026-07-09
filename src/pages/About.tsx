@@ -82,7 +82,7 @@ const About = () => {
               className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-semibold uppercase tracking-wider"
             >
               <Award size={14} />
-              About CH Solution
+              About CCH Solution
             </motion.div>
             
             <motion.h1
@@ -123,7 +123,7 @@ const About = () => {
               </h2>
               <div className="w-16 h-1 bg-gradient-primary rounded-full" />
               <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-                With over <strong className="text-foreground font-semibold">6+ years of combined experience</strong> in web application development, graphic branding, and Unity game creation, we formed CH Solution to offer unified, full-service technology solutions.
+                With over <strong className="text-foreground font-semibold">6+ years of combined experience</strong> in web application development, graphic branding, and Unity game creation, we formed CCH Solution to offer unified, full-service technology solutions.
               </p>
               <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
                 Our mission is to help companies transform their legacy operations, build engaging customer touchpoints, and scale their infrastructure with clean, performant React and backend architectures.
@@ -175,7 +175,7 @@ const About = () => {
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center mb-16 space-y-3">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-gradient">Why Partner With CH Solution?</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gradient">Why Partner With CCH Solution?</h2>
             <p className="text-muted-foreground max-w-md mx-auto text-sm md:text-base">
               We focus on premium quality, security, and top-tier architecture.
             </p>

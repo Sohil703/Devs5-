@@ -53,7 +53,7 @@ const Team = () => {
               className="font-display text-4xl md:text-6xl font-bold leading-tight"
             >
               Meet The Experts Behind <br />
-              <span className="text-gradient">CH Solution</span>
+              <span className="text-gradient">CCH Solution</span>
             </motion.h1>
             
             <motion.p

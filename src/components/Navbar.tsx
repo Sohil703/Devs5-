@@ -39,8 +39,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src="/logo.png" alt="CH Solution" className="h-8 w-auto transition-transform duration-300 group-hover:scale-105" />
-          <span className="font-display text-xl font-bold text-gradient">CH Solution</span>
+          <img src="/logo.png" alt="CCH Solution" className="h-8 w-auto transition-transform duration-300 group-hover:scale-105" />
+          <span className="font-display text-xl font-bold text-gradient">CCH Solution</span>
         </Link>
 
         {/* Desktop */}
