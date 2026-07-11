@@ -485,6 +485,40 @@ export const projects: Project[] = [
     liveUrl: "https://napcoalusystems.com/",
     color: "from-slate-500/20 to-blue-500/5",
     screenshot: "/napco-alu.png"
+  },
+  {
+    id: "proj12",
+    title: "Shreeji Distributors — Interior Products Showcase",
+    description: "A professional showcase and distributor platform for Shreeji Distributors, a premium supplier of interior hardware and products. Displays major brand aggregations and collections with an interactive catalog and inquiry shopping cart.",
+    category: "ecommerce",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    features: [
+      "Dynamic catalog showcasing interior hardware, plywood, and architectural coatings",
+      "Brand partner showcase highlighting collaborations with CenturyPly, Enox, MerinoLam, and Hafele",
+      "Interactive product cart system designed to streamline dealer inquiries",
+      "Fully responsive design optimized for seamless mobile and desktop experience"
+    ],
+    githubUrl: "#",
+    liveUrl: "https://ashad-khira.github.io/ShreejiDistributor/",
+    color: "from-orange-500/20 to-amber-500/5",
+    screenshot: "/shreeji-distributors.png"
+  },
+  {
+    id: "proj13",
+    title: "API Hub Portal — Internal Tools & Documentation",
+    description: "An enterprise API Hub Portal designed to manage, document, and monitor internal web APIs. Provides developers with a central repository for searching endpoints, viewing integration guides, and testing requests.",
+    category: "custom",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Swagger/OpenAPI", "Node.js"],
+    features: [
+      "Comprehensive API documentation and search directory",
+      "Interactive API console for testing requests and inspecting responses",
+      "Secure user access and role-based token management system",
+      "Detailed developer guides and integration tutorials"
+    ],
+    githubUrl: "#",
+    liveUrl: "/API Hub Documentation.pdf",
+    color: "from-indigo-600/20 to-blue-600/5",
+    screenshot: "/api_hub.png"
   }
 ];
 

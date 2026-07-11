@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, Layers, Play, ArrowRight } from "lucide-react";
+import { ExternalLink, Github, Layers, Play, ArrowRight, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 import { projects } from "@/data/teamData";
 
@@ -27,8 +27,8 @@ const ProjectsSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
-            {projects.slice(0, 2).map((project, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mt-12">
+            {projects.slice(0, 3).map((project, i) => (
               <motion.div
                 key={project.id}
                 layout
@@ -37,19 +37,18 @@ const ProjectsSection = () => {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="group relative rounded-2xl bg-card border border-border overflow-hidden hover:border-primary/30 transition-all duration-300 hover:glow-primary flex flex-col justify-between"
               >
-                {/* Visual Header */}
-                <div className={`h-40 bg-gradient-to-br ${project.color} flex items-center justify-center select-none group-hover:scale-[1.02] transition-transform duration-300 relative overflow-hidden`}>
-                  {project.screenshot.startsWith("/") ? (
+                <div className={`h-40 bg-gradient-to-br ${project.color || "from-primary/20 to-primary/5"} flex items-center justify-center select-none group-hover:scale-[1.02] transition-transform duration-300 relative overflow-hidden`}>
+                  {project.screenshot?.startsWith("/") ? (
                     <img 
                       src={project.screenshot} 
                       alt={project.title} 
                       className="w-full h-full object-cover"
                     />
                   ) : (
-                    <span className="relative z-10 text-6xl filter drop-shadow-md">{project.screenshot}</span>
+                    <span className="relative z-10 text-6xl filter drop-shadow-md">{project.screenshot || "💼"}</span>
                   )}
                   <div className="absolute top-4 right-4 text-[10px] px-2.5 py-0.5 rounded-full bg-background/60 backdrop-blur-md font-semibold text-foreground border border-border/50 uppercase tracking-wider">
-                    {project.category.replace("-", " ")}
+                    {project.category?.replace("-", " ") || "project"}
                   </div>
                 </div>
 
@@ -94,8 +93,17 @@ const ProjectsSection = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
                     >
-                      <ExternalLink size={12} />
-                      Live Demo
+                      {project.liveUrl?.endsWith(".pdf") ? (
+                        <>
+                          <FileText size={12} />
+                          View Documentation
+                        </>
+                      ) : (
+                        <>
+                          <ExternalLink size={12} />
+                          Live Demo
+                        </>
+                      )}
                     </a>
                   </div>
                 </div>

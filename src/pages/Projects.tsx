@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { projects } from "@/data/teamData";
-import { ExternalLink, Github, Layers, Play, Star, ArrowRight } from "lucide-react";
+import { ExternalLink, Github, Layers, Play, Star, ArrowRight, FileText } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -98,7 +98,7 @@ const Projects = () => {
         <div className="container mx-auto px-4 md:px-8">
           <motion.div 
             layout 
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
           >
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((project, i) => (
@@ -112,18 +112,18 @@ const Projects = () => {
                   className="group relative rounded-3xl bg-card border border-border overflow-hidden hover:border-primary/30 transition-all duration-300 hover:glow-primary flex flex-col justify-between"
                 >
                   {/* Visual Header */}
-                  <div className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center select-none group-hover:scale-[1.01] transition-transform duration-300 relative overflow-hidden`}>
-                    {project.screenshot.startsWith("/") ? (
+                  <div className={`h-48 bg-gradient-to-br ${project.color || "from-primary/20 to-primary/5"} flex items-center justify-center select-none group-hover:scale-[1.01] transition-transform duration-300 relative overflow-hidden`}>
+                    {project.screenshot?.startsWith("/") ? (
                       <img 
                         src={project.screenshot} 
                         alt={project.title} 
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <span className="relative z-10 text-6xl filter drop-shadow-md">{project.screenshot}</span>
+                      <span className="relative z-10 text-6xl filter drop-shadow-md">{project.screenshot || "💼"}</span>
                     )}
                     <div className="absolute top-4 right-4 text-[10px] px-2.5 py-1 rounded-full bg-background/70 backdrop-blur-md font-semibold text-foreground border border-border/50 uppercase tracking-wider">
-                      {project.category.replace("-", " ")}
+                      {project.category?.replace("-", " ") || "project"}
                     </div>
                   </div>
 
@@ -168,8 +168,17 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline hover:translate-x-0.5 transition-transform"
                       >
-                        <ExternalLink size={13} />
-                        View Live Website
+                        {project.liveUrl?.endsWith(".pdf") ? (
+                          <>
+                            <FileText size={13} />
+                            View Documentation
+                          </>
+                        ) : (
+                          <>
+                            <ExternalLink size={13} />
+                            View Live Website
+                          </>
+                        )}
                       </a>
                     </div>
                   </div>
