@@ -8,19 +8,66 @@ import Footer from "@/components/Footer";
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", company: "", phone: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
     
-    // Trigger premium toast
-    toast.success("Inquiry Sent Successfully!", {
-      description: `Thank you ${form.name}. Our team lead will reach out to you shortly.`,
-    });
+    try {
+      const BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+      const CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
-    setSubmitted(true);
-    // Reset form
-    setForm({ name: "", email: "", company: "", phone: "", message: "" });
-    setTimeout(() => setSubmitted(false), 5000);
+      if (!BOT_TOKEN || !CHAT_ID) {
+        throw new Error("Telegram configuration is missing in environment variables.");
+      }
+
+      const text = [
+        '📬 <b>New Contact Form Submission</b>',
+        '━━━━━━━━━━━━━━━━━━━━',
+        `<b>Name:</b> ${form.name}`,
+        `<b>Email:</b> ${form.email}`,
+        form.company ? `<b>Company:</b> ${form.company}` : '',
+        form.phone ? `<b>Phone:</b> ${form.phone}` : '',
+        `<b>Message:</b>\n${form.message}`,
+        `━━━━━━━━━━━━━━━━━━━━`,
+        `🕐 <b>Submitted:</b> ${new Date().toLocaleString()}`
+      ].filter(Boolean).join('\n');
+
+      const telegramUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+      const response = await fetch(telegramUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text,
+          parse_mode: 'HTML',
+        }),
+      });
+
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        console.error('Telegram API error details:', errData);
+        throw new Error("Failed to send message via Telegram.");
+      }
+
+      // Trigger premium toast
+      toast.success("Inquiry Sent Successfully!", {
+        description: `Thank you ${form.name}. Our team lead will reach out to you shortly.`,
+      });
+
+      setSubmitted(true);
+      // Reset form
+      setForm({ name: "", email: "", company: "", phone: "", message: "" });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (error: any) {
+      console.error('Contact submit error:', error);
+      toast.error("Failed to Send Inquiry", {
+        description: error.message || "Please check your network or try again later.",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -168,12 +215,13 @@ const Contact = () => {
                       />
                     </div>
 
-                    <button
+                     <button
                       type="submit"
-                      className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-primary text-primary-foreground font-semibold text-sm hover:opacity-95 shadow-md shadow-primary/10 hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
+                      disabled={loading}
+                      className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-primary text-primary-foreground font-semibold text-sm hover:opacity-95 shadow-md shadow-primary/10 hover:shadow-primary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                     >
-                      Submit Proposal
-                      <Send size={15} />
+                      {loading ? "Sending Proposal..." : "Submit Proposal"}
+                      {!loading && <Send size={15} />}
                     </button>
                   </form>
                 )}
